@@ -1,0 +1,30 @@
+{
+  "name": "servidor-postgresql",
+  "version": "0.0.1",
+  "description": "proyecto con autentizacion JwT y TypeScript",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "build":"rimraf ./dist && tsc",
+    "start":"node dist/server.js"
+    },
+  "author": "EnzoMelgarejo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.5",
+    "prisma": "^5.20.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.6.2"
+  }
+}
