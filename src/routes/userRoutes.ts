@@ -1,3 +1,13 @@
+// Este archivo maneja las rutas relacionadas con los usuarios en la API.
+// Utiliza Express para definir las rutas y controladores correspondientes a las operaciones CRUD (crear, leer, actualizar y eliminar) de los usuarios.
+// Además, incluye un middleware de autenticación utilizando JWT (JSON Web Tokens) para garantizar que el usuario esté autenticado antes de realizar ciertas operaciones.
+// Las rutas definidas son:
+// - `POST /`: Crea un nuevo usuario, protegido por el middleware `authenticateToken`.
+// - `GET /`: Obtiene todos los usuarios, protegido por el middleware `authenticateToken`.
+// - `GET /:id`: Obtiene un usuario específico por su ID, protegido por el middleware `authenticateToken`.
+// - `PUT /:id`: Actualiza un usuario específico por su ID, protegido por el middleware `authenticateToken`.
+// - `DELETE /:id`: Elimina un usuario específico por su ID, protegido por el middleware `authenticateToken`.
+
 import express, { NextFunction } from "express";
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";

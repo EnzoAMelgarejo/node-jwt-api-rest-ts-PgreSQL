@@ -1,3 +1,7 @@
+// Este archivo maneja la lógica relacionada con la creación y gestión de usuarios en la aplicación.
+// Las funciones en este archivo interactúan con la base de datos para realizar las operaciones de crear, obtener, actualizar y eliminar usuarios.
+// Además, incluye la lógica para hashear la contraseña de los usuarios antes de almacenarlas en la base de datos.
+
 import { hashPassword } from "../services/passwordServices"
 import { Request, Response } from "express"
 import prisma from '../models/user.prisma'

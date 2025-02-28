@@ -1,3 +1,8 @@
+// Este controlador maneja la lógica de registro e inicio de sesión de usuarios.
+// - La función `register` crea un nuevo usuario, valida los datos, hashea la contraseña y genera un token JWT.
+// - La función `login` valida las credenciales del usuario, compara la contraseña y, si es correcta, genera un token JWT para el acceso.
+// Ambos procesos manejan errores y responden con mensajes apropiados en caso de fallos.
+
 import { Request, Response} from 'express'
 import { comparePassword, hashPassword } from '../services/passwordServices'
 import { generateToken } from '../services/auth.service'
