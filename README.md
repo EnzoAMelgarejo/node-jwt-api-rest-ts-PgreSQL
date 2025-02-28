@@ -25,8 +25,8 @@ Este proyecto es una API RESTful desarrollada en **Node.js** que implementa la f
 1. **Clonar el repositorio**:
    
    ```bash
-   git clone <url-del-repositorio>
-   cd <nombre-del-repositorio>
+   git clone <https://github.com/EnzoAMelgarejo/node-jwt-api-rest-ts-PgreSQL>
+   cd <node-jwt-api-rest-ts-PgreSQL>
 
 2. **Instalar las dependencias**
     
